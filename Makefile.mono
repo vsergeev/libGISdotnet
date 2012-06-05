@@ -1,0 +1,17 @@
+MCS = mcs
+MCS_FLAGS =
+LIBGISDOTNET_SRC = AtmelGeneric.cs IntelHex.cs SRecord.cs
+TEST_PROGS = TestGIS_RecDump.exe TestGIS_Write.exe
+
+all: $(TEST_PROGS)
+	@echo
+	@echo Complation complete.
+	@echo Run TestGIS_RecDump.exe with:	mono TestGIS_RecDump.exe
+	@echo Run TestGIS_Write.exe with:	mono TestGIS_Write.exe
+
+%.exe: %.cs $(LIBGISDOTNET_SRC)
+	$(MCS) $(LIBGISDOTNET_SRC) $< -out:$@
+
+clean:
+	rm -rf $(TEST_PROGS)
+
