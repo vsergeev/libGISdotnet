@@ -1,7 +1,7 @@
 MCS = mcs
 MCS_FLAGS =
 LIBGISDOTNET_SRC = AtmelGeneric.cs IntelHex.cs SRecord.cs
-TEST_PROGS = TestGIS_RecDump.exe TestGIS_Write.exe
+TEST_PROGS = tests/TestGIS_RecDump.exe tests/TestGIS_Write.exe
 
 all: $(TEST_PROGS)
 	@echo
