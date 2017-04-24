@@ -1,4 +1,6 @@
-# libgisdotnet
+# Note: this project is functional, but no longer maintained.
+
+## libgisdotnet
 
 `libgisdotnet` is a C# port of the [libGIS](https://github.com/vsergeev/libGIS) library. Written by Jerry G. Scherer (@scherej1).
 
